@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import { HabitList } from './habitList.jsx'
+import { AddHabit } from './AddHabit.jsx'
 
 function App() {
   const [habits, setHabits] = useState([
@@ -18,9 +19,21 @@ const toggleHabit = (id) => {
     setHabits(updated);
 }
 
+const addHabit = (name) => {
+    const newHabit = {
+      id: Date.now(),
+      name,
+      completedToday: false
+    };
+    setHabits([...habits, newHabit]);
+  };
+
+
+
   return (
     <>
       <h1>Habit Tracker</h1>
+      <AddHabit onAdd={addHabit}/>
       <HabitList habits={habits} onToggle={toggleHabit}/>
     </>
   )
