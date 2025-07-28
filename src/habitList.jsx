@@ -1,7 +1,7 @@
-export const habitList = ({habits, onToggle}) => {
+export const HabitList = ({habits, onToggle}) => {
     return(
         <ul>
-            {habits.map(habit)=>(
+            {habits.map((habit)=>(
                 <li key={habit.id}>
                     <span>{habit.name}</span>
                     <button onClick={()=>onToggle(habit.id)}>
@@ -9,7 +9,7 @@ export const habitList = ({habits, onToggle}) => {
                     </button>
 
                 </li>
-            )}
+            ))}
         </ul>
     )
 }
