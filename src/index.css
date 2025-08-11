@@ -81,3 +81,7 @@ button:focus-visible {
 li{
   list-style:none
 }
+
+.submit-button{
+  padding: 10px;
+}

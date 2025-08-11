@@ -19,9 +19,11 @@ const handleSubmit = (event)=>{
             value={habitName}
             onChange={(event)=>{setHabitName(event.target.value)}}
             />
+            <div className="submit-button">
             <button type="submit">
                 Add Habit
             </button>
+            </div>
         </form>
     )
 }
