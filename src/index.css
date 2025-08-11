@@ -28,6 +28,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-image: url("https://img.freepik.com/free-vector/abstract-blue-light-pipe-speed-zoom-black-background-technology_1142-9980.jpg?semt=ais_hybrid&w=740&q=80");
 }
 
 h1 {
@@ -46,6 +47,7 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+  width:141px;
 }
 button:hover {
   border-color: #646cff;
@@ -83,7 +85,7 @@ li{
   list-style:none;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
 
 .submit-button{
