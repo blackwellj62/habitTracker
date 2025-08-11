@@ -7,7 +7,9 @@ function App() {
   const [habits, setHabits] = useState([
     {id: 1, name:"morning stretches", completedToday: false},
     {id: 2, name: "exercise", completedToday:false},
-    {id:3, name: "code", completedToday:false}
+    {id:3, name: "code", completedToday:false},
+    {id:4, name: "clean house", completedToday:false},
+    {id:5, name: "practice trombone", completedToday:false}
   ])
 
 const toggleHabit = (id) => {
